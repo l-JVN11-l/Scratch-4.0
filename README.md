@@ -3,6 +3,10 @@
 
 "Scratch 4.0" is an **unofficial** version of the Scratch website ([https://scratch.mit.edu](https://scratch.mit.edu)).
 
+**OFFICIAL** Scratch Studio! [https://scratch.mit.edu/studios/31620685/](https://scratch.mit.edu/studios/31620685/)
+
+**OFFICIAL** Scratch Forum! [https://scratch.mit.edu/discuss/topic/604717/](https://scratch.mit.edu/discuss/topic/604717/)
+
 <hr />
 
 Developers: \
