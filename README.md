@@ -12,7 +12,14 @@
 Developers: \
 [INDIOUS111](https://scratch.mit.edu/users/INDIOUS111/) \
 [ScratchTheCoder12345](https://scratch.mit.edu/users/ScratchTheCoder12345/) \
-[JVN11](https://scratch.mit.edu/users/jvn11/) \
+[jvn11](https://scratch.mit.edu/users/jvn11/) \
 [coolcoder1213](https://scratch.mit.edu/users/coolcoder1213/)
 
+
+
 <hr />
+NEVER allow free access to modify source code
+
+
+GUI is https://github.com/LLK/scratch-gui
+Consider forking ^^^
