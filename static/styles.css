@@ -1,4 +1,9 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&family=Koulen&display=swap');
+
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: #f0f0f0;
   margin: 0px; /* margins are cool */
@@ -21,6 +26,10 @@ body {
   margin: 0;
   padding-bottom: 6px;
   /* so the username doesn't break anything when long */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Koulen', sans-serif
 }
 
 .user-subtitle {
@@ -67,7 +76,7 @@ body {
 
 
 .container {
-  padding: 0 300px;
+  padding: 0 200px;
 }
 
 .user_id {
@@ -91,6 +100,10 @@ body {
 
 .navi a {
   display: block;
-  padding: 8px;
-  background-color: #dddddd;
+  padding: 16px;
+}
+
+.current {
+  background: #474747;
+  color: #fdfdfd
 }
