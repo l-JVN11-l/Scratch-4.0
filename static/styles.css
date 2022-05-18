@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap');
 body {
-  background-color: #f1f1f1
-  /* white is too bright, that's why you use a light gray */
+  background-color: #f0f0f0;
+  margin: 0px; /* margins are cool */
 }
-
 .raleway {
   font-family: 'Raleway', sans-serif;
 }
@@ -21,17 +19,78 @@ body {
 .user-title {
   font-weight: bold;
   margin: 0;
-  width: 25px;
+  padding-bottom: 6px;
   /* so the username doesn't break anything when long */
 }
 
 .user-subtitle {
-  color: #00a3d7;
+  color: #424242;
   margin: 0;
   font-size: 0.75em;
+  background-color: lightblue;
+  border-radius: 9999pt; /* cool circle */
+  padding: 3pt; /* looks broken otherwise */
+}
+
+.user-sub-st {
+  color: #424242;
+  margin: 0;
+  font-size: 0.75em;
+  background-color: lightorange;
+  border-radius: 9999pt; /* cool circle */
+  padding: 3pt; /* looks broken otherwise */
 }
 
 .user-pic {
   flex: 0;
-  border: 0;
+  border: 10pt;
+  border-color: lightblue;
+  border-radius: 9999pt /* cool circle */
+}
+
+.bio {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #aaaaaa;
+  overflow: scroll;
+  padding: 15pt;
+}
+
+.wiwo {
+  /* these sizes are by far too small. remember the average display for a computer is 1366x768 */
+  width: 400px;
+  height: 200px;
+  border: 1px solid #aaaaaa;
+  overflow: scroll;
+  padding: 15pt;
+}
+
+
+.container {
+  padding: 0 300px;
+}
+
+.user_id {
+  color: #787878
+}
+
+.navbar-bg {
+  background: #4d97ff;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navi {
+  float: left;
+}
+
+.navi a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="{{ url_for('static', filename='global.js') }}"></script>
+  <title>{{ username }}'s profile</title>
+
+  <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
+</head>
+<body>
+  <script>
+    getUserDetails("{{ username }}")
+  </script>
+
+  <div class="navbar-bg">
+    <div class="container">
+      <ul class="navbar">
+        <li class="navi"><a href="{{ url_for('showWelcomePage') }}">Home</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  
+  <div class="container">
+    {% if pfpHtml == True %}
+      <div class="flex">
+        <img width="100" height="100" src="{{ pfpLink }}" alt="{{ username }}'s profile picture" class="user-pic" />
+        <div>
+          <h1 class="raleway user-title">{{ username }} <span class="user_id">#{{ userID }}</span></h1>
+          <h3 class="raleway user-subtitle">{{ status }} | Joined {{ userJoined }} | </h3>
+        </div>
+      </div>
+  
+      <div>
+        <div class="bio">
+          <p>About me</p>
+          <p>{{ userBio }}</p>
+        </div><br />
+        <div class="wiwo">
+          <p> What I'm Working On<p>
+          <p> {{ userWiwo }}</p>
+        </div>
+      </div>
+
+    
+    {% else %}
+      <p>Whoops! Our server is Scratch'ing its head
+</p>
+    {% endif %}
+  </div>
+    
+
+    
+</script>
+</body>
+</html>
+
+
+
+<!-- {{ userId }} -->
