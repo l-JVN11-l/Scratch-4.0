@@ -13,6 +13,10 @@ function doSomethingWithUsername() {
   let getUser = document.querySelector('#userInput').val
   let userNameTitle = document.querySelector('.user-title')
   userNameTitle.innerText = getUser
-}
 
+
+
+  
+
+  
 

@@ -1,19 +1,27 @@
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata&family=Roboto');
+
+:root {
+  --bw-width: 250px;
+  --bw-height: 200px;
+  --bw-margin-right: 20px;
+}
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 body {
   background-color: #f0f0f0;
   margin: 0px; /* margins are cool */
+  font-family: 'Roboto', sans-serif;
 }
-.raleway {
-  font-family: 'Raleway', sans-serif;
+.crimson-pro {
+  font-family: 'Crimson Pro', sans-serif;
 }
 
-.montserrat-bold {
-  font-family: 'Montserrat', sans-serif;
+.literata {
+  font-family: 'Literata', sans-serif;
 }
 .flex {
   display: flex;
@@ -24,12 +32,8 @@ body {
 .user-title {
   font-weight: bold;
   margin: 0;
-  padding-bottom: 6px;
-  /* so the username doesn't break anything when long */
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Koulen', sans-serif
+  padding-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .user-subtitle {
@@ -58,8 +62,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bio {
-  width: 400px;
-  height: 200px;
+  width: var(--bw-width);
+  height: var(--bw-height);
+  margin-right: var(--bw-margin-right);
   border: 1px solid #aaaaaa;
   overflow: scroll;
   padding: 15pt;
@@ -67,8 +72,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .wiwo {
   /* these sizes are by far too small. remember the average display for a computer is 1366x768 */
-  width: 400px;
-  height: 200px;
+  width: var(--bw-width);
+  height: var(--bw-height);
   border: 1px solid #aaaaaa;
   overflow: scroll;
   padding: 15pt;
@@ -85,6 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar-bg {
   background: #4d97ff;
+  margin-bottom: 6px;
 }
 
 .navbar {
@@ -105,5 +111,32 @@ h1, h2, h3, h4, h5, h6 {
 
 .current {
   background: #474747;
-  color: #fdfdfd
+  color: #fdfdfd;
+}
+
+.pf-banner {
+  background: #00a3d7;
+  border-radius: 3pt;
+  height: 500px;
+  width: inherit;
+  position: relative;
+}
+
+.pf-banner .main-text {
+  margin: 0;
+  position: absolute;
+  top: 72.5%;
+  left: 1%;
+  background: rgba(255, 255, 255, .5);
+  padding: 14px;
+  border-radius: 4pt;
+  backround: url('https://uploads.scratch.mit.edu/get_image/user/63631688_120x120.png')
+}
+
+.info {
+  display: flex;
+}
+
+.info div {
+  flex: 1;
 }

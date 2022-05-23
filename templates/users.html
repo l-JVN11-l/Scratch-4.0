@@ -26,15 +26,22 @@
   
   <div class="container">
     {% if pfpHtml == True %}
-      <div class="flex">
-        <img width="100" height="100" src="{{ pfpLink }}" alt="{{ username }}'s profile picture" class="user-pic" />
-        <div>
-          <h1 class="raleway user-title">{{ username }} <span class="user_id">#{{ userID }}</span></h1>
-          <h3 class="raleway user-subtitle">{{ status }} | Joined {{ userJoined }} | </h3>
+      <div class="pf-banner">
+        <div class="main-text">
+          <div class="flex">
+            <img width="100" height="100" src="{{ pfpLink }}" alt="{{ username }}'s profile picture" class="user-pic" />
+            
+            <div>
+              <h1 class="literata user-title">{{username}}</a> <span class="user_id">#{{ userID }}</span></h1>
+              <p>{{ status }} | Joined {{ userJoined }} | </p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <br />
   
-      <div>
+      <div class="info">
         <div class="bio">
           <p>About me</p>
           <p>{{ userBio }}</p>
@@ -45,9 +52,11 @@
         </div>
       </div>
 
+    <p>{{ followers_users }}</p>
+
     
     {% else %}
-      <p>Whoops! Our server is Scratch'ing its head
+      <p> Whoops! Our server is Scratch'ing its head!
 </p>
     {% endif %}
   </div>
@@ -59,5 +68,3 @@
 </html>
 
 
-
-<!-- {{ userId }} -->

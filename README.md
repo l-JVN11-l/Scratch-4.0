@@ -11,17 +11,15 @@ Official stuff!:
 
 <hr />
 
-Developers: \
-[INDIOUS111](https://scratch.mit.edu/users/INDIOUS111/) \
+Developers: \ \
 [ScratchTheCoder12345](https://scratch.mit.edu/users/ScratchTheCoder12345/) \
 [jvn11](https://scratch.mit.edu/users/jvn11/) \
-[coolcoder1213](https://scratch.mit.edu/users/coolcoder1213/)
+[coolcoder1213](https://scratch.mit.edu/users/coolcoder1213/)\
+[INDIOUS111](https://scratch.mit.edu/users/INDIOUS111/)
+
 
 
 
 <hr />
-NEVER allow free access to modify source code
 
-
-GUI is https://github.com/LLK/scratch-gui
-Consider forking ^^^
+We used the code from @LLK (the people who made scratch!) for Scratch Blocks

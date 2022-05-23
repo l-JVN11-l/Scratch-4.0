@@ -49,3 +49,30 @@ def scratcher(user):
     text = url.json()
     scratcher = text["status"]
     return scratcher
+
+
+def featured_project_info(user):
+    url = requests.get(f"https://scratch.mit.edu/site-api/users/all/{user}/")
+    text = url.json()
+    FeaturedThumbnailURL = text["thumbnail_url"]
+    FeaturedLabel = text["featured_project_label_name"]
+    FeaturedTitle = text["featured_project_data"]["title"]
+    FeaturedPID = text['featured_project']
+    FeaturedCreator = text["featured_project_data"]["creator"]
+    return {
+      'featuredThumbnailURL': FeaturedThumbnailURL,
+      'featuredLabel': FeaturedLabel,
+      'featuredTitle': FeaturedTitle,
+      'featuredPID':  FeaturedPID,
+      'featuredCreator': FeaturedCreator
+    }
+
+
+
+def user_followers_list_username(user):
+    url = requests.get(f"https://api.scratch.mit.edu/users/jvn11/followers/")
+    text = url.json()
+    followers = []
+  
+    for i in (range(0, len(text))):
+      followers.append(text[i]['username'])
