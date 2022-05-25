@@ -3,7 +3,7 @@ import os
 import httpx
 import json
 
-
+from scratchclient import ScratchSession
 
 
 def get_user_info(user):
@@ -76,3 +76,7 @@ def user_followers_list_username(user):
   
     for i in (range(0, len(text))):
       followers.append(text[i]['username'])
+
+
+def login(username,password):
+  session = ScratchSession(username, password)

@@ -11,6 +11,7 @@ Flask = "^2.1.2"
 requests = "^2.27.1"
 scratchconnect = "^3.1"
 httpx = "^0.22.0"
+scratchclient = "^0.5.2"
 
 [tool.poetry.dev-dependencies]
 

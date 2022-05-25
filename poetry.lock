@@ -222,6 +222,22 @@ idna = {version = "*", optional = true, markers = "extra == \"idna2008\""}
 idna2008 = ["idna"]
 
 [[package]]
+name = "scratchclient"
+version = "0.5.2"
+description = "A scratch API wrapper for Python."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pymitter = "*"
+requests = "*"
+websocket-client = "*"
+
+[package.extras]
+fast = ["numpy", "wsaccel"]
+
+[[package]]
 name = "scratchconnect"
 version = "3.1"
 description = "Python Library to connect Scratch API and much more. This library can show the statistics of Users, Projects, Studios, Forums and also connect and set cloud variables of a project!"
@@ -298,7 +314,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "887ffaa0a407e70eb279b44bec5350924b8cccafb44e925c99e0d611ccf841c9"
+content-hash = "5fb4dc011e091f44b920aee48a04f1476342c8b142c558211952166c941c060d"
 
 [metadata.files]
 anyio = [
@@ -426,6 +442,9 @@ requests = [
 rfc3986 = [
     {file = "rfc3986-1.5.0-py2.py3-none-any.whl", hash = "sha256:a86d6e1f5b1dc238b218b012df0aa79409667bb209e58da56d0b94704e712a97"},
     {file = "rfc3986-1.5.0.tar.gz", hash = "sha256:270aaf10d87d0d4e095063c65bf3ddbc6ee3d0b226328ce21e036f946e421835"},
+]
+scratchclient = [
+    {file = "scratchclient-0.5.2.tar.gz", hash = "sha256:990a6106320e1b79e86e0dcf6a4510e5d8704074f3dc42e3f8f7f46d46cf2542"},
 ]
 scratchconnect = [
     {file = "scratchconnect-3.1.tar.gz", hash = "sha256:aec9a7bb356c96a3f49d286c23805f211638d3233e109887a189cb55e513bb95"},

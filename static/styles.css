@@ -97,6 +97,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
   overflow: hidden;
 }
 
@@ -109,10 +110,17 @@ body {
   padding: 16px;
 }
 
+.navi a:hover {
+  background: #474747
+  opacity: 75%;
+}
+
+/*
+actual scratch doesn't a color for current
 .current {
   background: #474747;
   color: #fdfdfd;
-}
+}*/
 
 .pf-banner {
   background: #00a3d7;
