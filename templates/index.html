@@ -6,17 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scratch 4.0</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 <body>
   <div class="navbar-bg">
     <div class="container">
       <ul class="navbar">
         <li class="navi"><a href="{{ url_for('showWelcomePage') }}" class="current">Home</a></li>
-        <li class="navi">Create</li>
-        <li class="navi">Ideas</li>
-        <li class="navi">About</li>
+        <li class="navi"><a href="#">Create</a></li>
+        <li class="navi"><a href="#">Ideas</a></li>
+        <li class="navi"><a href="#">About</a></li>
         <input placeholder="searchbox">
-        <button>Messages</button>
+        <button>
+          {%  %}
+        </button>
         <button>MyStuff</button>
         <button>UserName</button>
       </ul>
