@@ -8,7 +8,7 @@
 
 a {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 
 body {
@@ -147,4 +147,10 @@ actual scratch doesn't a color for current
 
 .info div {
   flex: 1;
+}
+
+.user-box {
+  color: black;
+  border: 2px solid #292929;
+  margin: 8px;
 }

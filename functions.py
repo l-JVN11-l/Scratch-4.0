@@ -77,8 +77,20 @@ def user_followers_list_username(user):
     for i in (range(0, len(text))):
       followers.append(text[i]['username'])
 
+    return {
+      'followers': followers,
+      'length': len(followers)
+    }
+
 
 
 
 def login(username,password):
   session = ScratchSession(username, password)
+
+
+def get_message_count(username):
+  count = requests.get(f'https://api.scratch.mit.edu/users/{username}/messages/count').json()['count']
+
+  return count
+  

@@ -8,20 +8,36 @@
   <title>{{ username }}'s profile</title>
 
   <link href="{{ url_for('static', filename='styles.css') }}" rel="stylesheet"/>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 <body>
   <script>
     getUserDetails("{{ username }}")
   </script>
 
+
   <div class="navbar-bg">
     <div class="container">
       <ul class="navbar">
-        <li class="navi"><a href="{{ url_for('showWelcomePage') }}">Home</a></li>
+        <li class="navi"><a href="{{ url_for('showWelcomePage') }}" class="current">Home</a></li>
+        <li class="navi"><a href="#">Create</a></li>
+        <li class="navi"><a href="#">Ideas</a></li>
+        <li class="navi"><a href="#">About</a></li>
+        {{ message_count }}
+        <input placeholder="searchbox">
+        <button>
+          {% if message_count > 0 %}
+            <i class="bi bi-envelope-exclamation-fill"></i>
+          {% else %}
+            <i class="bi bi-envelope-fill"></i>
+          {% endif %}
+        </button>
+        <button>My Stuff</button>
+        <button>{{ username }}</button>
       </ul>
     </div>
   </div>
-
 
   
   <div class="container">
@@ -52,7 +68,11 @@
         </div>
       </div>
 
-    <p>{{ followers_users }}</p>
+    {% for user in followers_users %}
+      <div class="user-box">
+        <a href="/users/{{ user }}">{{ user }}</a>
+      </div>
+    {% endfor %}
 
     
     {% else %}

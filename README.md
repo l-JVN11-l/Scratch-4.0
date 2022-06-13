@@ -20,6 +20,7 @@ Developers: \ \
 
 
 
+
 <hr />
 
-We used the code from @LLK (the people who made scratch!) for Scratch Blocks
+We used the code from @LLK (the people who made scratch!)
